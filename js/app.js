@@ -296,7 +296,8 @@ function buyNowWhatsapp(){
   window.open(`https://wa.me/${SETTINGS.whatsappNumber}?text=${msg}`,'_blank');
 }
 
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded', async ()=>{
+  try { await Promise.race([window.AtharLiveReady, new Promise(r=>setTimeout(r, 9000))]); } catch(e){}
   try { history.replaceState({view:'home'}, ''); } catch(e){}
   renderHome();
   renderReviews();

@@ -1,0 +1,55 @@
+// ============================================
+// آثر | Athar - Google Sheets JSON API
+// انسخ محتوى هذا الملف والصقه في:
+// Extensions → Apps Script (داخل ملف Google Sheets)
+// ثم: Deploy → New deployment → Web app
+// Execute as: Me | Who has access: Anyone
+// ============================================
+// ⚠️ أسماء التبويبات (Tabs) لازم تكون بالظبط:
+// products | combos | bracelets | necklaces | rings | reviews | faq | settings
+
+function sheetToObjects(name) {
+  var sh = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(name);
+  if (!sh) return [];
+  var vals = sh.getDataRange().getValues();
+  if (vals.length < 2) return [];
+  var head = vals[0].map(function (h) { return String(h).trim(); });
+  var out = [];
+  for (var r = 1; r < vals.length; r++) {
+    var row = vals[r];
+    var empty = true;
+    for (var i = 0; i < row.length; i++) {
+      if (String(row[i]).trim() !== '') { empty = false; break; }
+    }
+    if (empty) continue;
+    var o = {};
+    for (var c = 0; c < head.length; c++) o[head[c]] = row[c];
+    out.push(o);
+  }
+  return out;
+}
+
+function settingsToObject() {
+  var rows = sheetToObjects('settings');
+  var o = {};
+  rows.forEach(function (r) {
+    if (r.key !== undefined) o[String(r.key).trim()] = r.value;
+  });
+  return o;
+}
+
+function doGet() {
+  var data = {
+    products: sheetToObjects('products'),
+    combos: sheetToObjects('combos'),
+    bracelets: sheetToObjects('bracelets'),
+    necklaces: sheetToObjects('necklaces'),
+    rings: sheetToObjects('rings'),
+    reviews: sheetToObjects('reviews'),
+    faq: sheetToObjects('faq'),
+    settings: settingsToObject()
+  };
+  return ContentService
+    .createTextOutput(JSON.stringify(data))
+    .setMimeType(ContentService.MimeType.JSON);
+}
