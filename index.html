@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#0A0A0C" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>آثر | Athar - اكتشفي إكسسواراتك مع آثر</title>
+  <meta name="description" content="آثر - Athar | براند إكسسوارات حريمي فاخر - Luxury Gold & Elegant Black - خواتم، انسيلات، سلاسل، حلق وكومبوهات" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=Cormorant+Garamond:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <!-- Logo placeholder -->
+      <a href="#" class="logo" data-nav="home">
+        <div class="logo-box"><img src="1213.png" alt="آثر | Athar"></div>
+        <div class="logo-text">
+          <span class="logo-ar">آثر</span>
+          <span class="logo-en">Athar</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#" class="nav-link active" data-nav="home" data-i18n="nav_home">الرئيسية</a>
+        <a href="#" class="nav-link" data-nav="reviews" data-i18n="nav_reviews">آراء العملاء</a>
+        <a href="#" class="nav-link" data-nav="faq" data-i18n="nav_faq">الأسئلة والاسترجاع</a>
+        <a href="#" class="nav-link" data-nav="contact" data-i18n="nav_contact">تواصل معنا</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="langBtn" aria-label="تغيير اللغة" title="English">
+          <span id="langText">EN</span>
+        </button>
+        <button class="icon-btn" id="themeBtn" aria-label="تغيير المظهر" title="Mauve">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a10 10 0 0 1 10 10"></path><circle cx="12" cy="12" r="4"></circle></svg>
+        </button>
+        <button class="cart-btn" id="cartBtn" aria-label="سلة المشتريات">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <path d="M16 10a4 4 0 0 1-8 0"></path>
+          </svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="menu-toggle" id="menuToggle" aria-label="القائمة">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#" class="mobile-link" data-nav="home" data-i18n="nav_home">الرئيسية</a>
+      <a href="#" class="mobile-link" data-nav="reviews" data-i18n="nav_reviews">آراء العملاء</a>
+      <a href="#" class="mobile-link" data-nav="faq" data-i18n="nav_faq">الأسئلة والاسترجاع</a>
+      <a href="#" class="mobile-link" data-nav="contact" data-i18n="nav_contact">تواصل معنا</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- ================= HOME ================= -->
+    <div id="view-home" class="view active">
+      <!-- Hero -->
+      <section class="hero">
+        <video class="hero-video" autoplay muted loop playsinline preload="metadata" disablepictureinpicture>
+          <source src="1211.mp4" type="video/mp4" />
+        </video>
+        <div class="hero-video-shade"></div>
+        <div class="hero-bg"></div>
+        <div class="hero-glow"></div>
+        <div class="container hero-inner">
+          <div class="live-counter"><span class="live-dot"></span><strong id="liveCount">…</strong>&nbsp;<span data-i18n="live_text">شخص يتصفح الموقع الآن</span></div>
+          <!-- LOGO HERE placeholder -->
+          <div class="hero-logo-box"><img src="1213.png" alt="آثر | Athar"></div>
+          <p class="hero-kicker" data-i18n="hero_kicker">Athar — Luxury Women's Accessories</p>
+          <h1 class="hero-title">خلي إكسسواراتك ديماً من <span>آثر</span></h1>
+          <p class="hero-desc" data-i18n="hero_desc">اقل عدد منتجات لتنفيذ أي اوردر (2) منتج</p>
+          <div class="hero-actions">
+            <a href="#athar-products" class="btn btn-dark" id="heroProductsBtn" data-i18n="hero_btn_products">منتجات آثر</a>
+            <a href="#" class="btn btn-outline-dark" data-nav="combos" data-i18n="hero_btn_combos">COMBOS آثر</a>
+          </div>
+          <div class="hero-ornament"><span></span><i>✦</i><span></span></div>
+        </div>
+      </section>
+
+      <!-- ================= تسوقي حسب النوع — 4 قوائم × 30 ================= -->
+      <section class="section section-products" id="shop-by-type">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker" data-i18n="type_kicker">Shop By Type</p>
+            <h2 class="section-title" data-i18n="type_title">تسوقي حسب النوع</h2>
+            <div class="gold-line"></div>
+            <p class="section-sub" data-i18n="type_sub">خشي اختاري كل الترندات</p>
+          </div>
+
+          <div class="category-grid category-grid-3">
+            <!-- Necklaces -->
+            <a href="#" class="category-card" data-nav="necklaces">
+              <div class="category-img">
+                <img src="123.jfif" alt="سلاسل" loading="lazy">
+                <span class="category-badge" data-i18n="cat_necklaces_badge">30 منتج</span>
+                <div class="category-overlay"></div>
+              </div>
+              <div class="category-body">
+                <h3 data-i18n="cat_necklaces_title">سلاسل</h3>
+                <p data-i18n="cat_necklaces_desc">خشي خدي لفه هتطلعي ب 1000 منتج في ايدك</p>
+                <span class="category-btn" data-i18n="cat_necklaces_btn">فتح المنتجات →</span>
+              </div>
+            </a>
+            <!-- Bracelets -->
+            <a href="#" class="category-card" data-nav="bracelets">
+              <div class="category-img">
+                <img src="1234.jpg" alt="انسيلات" loading="lazy">
+                <span class="category-badge" data-i18n="cat_bracelets_badge">28 منتج</span>
+                <div class="category-overlay"></div>
+              </div>
+              <div class="category-body">
+                <h3 data-i18n="cat_bracelets_title">انسيلات</h3>
+                <p data-i18n="cat_bracelets_desc">خشي خدي لفه هتطلعي ب 1000 منتج في ايدك</p>
+                <span class="category-btn" data-i18n="cat_bracelets_btn">فتح المنتجات →</span>
+              </div>
+            </a>
+            <!-- Rings -->
+            <a href="#" class="category-card" data-nav="rings">
+              <div class="category-img">
+                <img src="122.jpeg" alt="خواتم" loading="lazy">
+                <span class="category-badge" data-i18n="cat_rings_badge">30 منتج</span>
+                <div class="category-overlay"></div>
+              </div>
+              <div class="category-body">
+                <h3 data-i18n="cat_rings_title">خواتم</h3>
+                <p data-i18n="cat_rings_desc">خشي خدي لفه هتطلعي ب 1000 منتج في ايدك</p>
+                <span class="category-btn" data-i18n="cat_rings_btn">فتح المنتجات →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= منتجات آثر — بعد الهيرو — قائمتان كـ كروت ================= -->
+      <section class="section section-products" id="athar-products">
+        <div class="container">
+          <div class="section-header">
+            <p class="section-kicker" data-i18n="section_kicker">Athar Collection</p>
+            <h2 class="section-title" data-i18n="section_title">منتجات آثر</h2>
+            <div class="gold-line"></div>
+            <p class="section-sub" data-i18n="section_sub">خشي اختاري كل الترندات</p>
+          </div>
+
+          <div class="category-grid">
+            <!-- كرت إكسسوارات آثر -->
+            <a href="#" class="category-card" data-nav="accessories">
+              <div class="category-img">
+                <img src="1216.jpg" alt="إكسسوارات آثر" loading="lazy">
+                <span class="category-badge" data-i18n="cat_accessories_badge">88 منتج</span>
+                <div class="category-overlay"></div>
+              </div>
+              <div class="category-body">
+                <h3 data-i18n="cat_accessories_title">إكسسوارات آثر</h3>
+                <p data-i18n="cat_accessories_desc">خشي خدي لفه هتطلعي ب 1000 منتج في ايدك</p>
+                <span class="category-btn" data-i18n="cat_accessories_btn">فتح المنتجات →</span>
+              </div>
+            </a>
+            <!-- كرت COMBOS آثر -->
+            <a href="#" class="category-card" data-nav="combos">
+              <div class="category-img">
+                <img src="1212.jpg" alt="COMBOS آثر" loading="lazy">
+                <span class="category-badge" data-i18n="cat_combos_badge">50 كومبو</span>
+                <div class="category-overlay"></div>
+              </div>
+              <div class="category-body">
+                <h3 data-i18n="cat_combos_title">COMBOS آثر</h3>
+                <p data-i18n="cat_combos_desc">خشي خدي لفه هتطلعي ب 1000 منتج في ايدك</p>
+                <span class="category-btn" data-i18n="cat_combos_btn">فتح الكومبوهات →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Social proof strip -->
+      <section class="trust-strip">
+        <div class="container trust-inner">
+          <div class="trust-item" data-i18n="trust_shipping"><span>✦</span> توصيل لكل المحافظات</div>
+          <div class="trust-item" data-i18n="trust_wrap"><span>✦</span> تغليف فاخر</div>
+          <div class="trust-item" data-i18n="trust_payment"><span>✦</span> دفع 50% فقط لتأكيد الأوردر</div>
+          <div class="trust-item" data-i18n="trust_return"><span>✦</span> لا يوجد استرجاع، يوجد استبدال فقط خلال 3 أيام</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= إكسسوارات آثر — 100 — 6×6 سم ================= -->
+    <div id="view-accessories" class="view view-has-bg">
+      <video class="view-bg-video" autoplay muted loop playsinline preload="metadata" disablepictureinpicture>
+        <source src="1214.mp4" type="video/mp4" />
+      </video>
+      <div class="view-bg-shade"></div>
+      <section class="page-hero page-hero-big">
+        <div class="container">
+          <p class="page-kicker" data-i18n="acc_kicker">Athar Accessories</p>
+          <h1 class="page-title" data-i18n="acc_title">إكسسوارات آثر</h1>
+          <div class="gold-line"></div>
+          <p class="page-desc" data-i18n="acc_desc">خشي خدي لفه هتطلعي ب 1000 منتج في ايدك</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="list-header">
+            <h2 class="list-title"><span class="list-num">01</span> <span data-i18n="acc_list_title">إكسسوارات آثر</span></h2>
+            <a href="#" class="btn btn-outline-gold btn-sm" data-nav="home" data-i18n="acc_back">← الرجوع</a>
+          </div>
+          <div class="products-grid-fixed" id="accessoriesGrid"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= COMBOS آثر — 50 — 6×6 سم ================= -->
+    <div id="view-combos" class="view view-has-bg">
+      <video class="view-bg-video" autoplay muted loop playsinline preload="metadata" disablepictureinpicture>
+        <source src="1215.mp4" type="video/mp4" />
+      </video>
+      <div class="view-bg-shade"></div>
+      <section class="page-hero page-hero-big">
+        <div class="container">
+          <p class="page-kicker" data-i18n="combos_kicker">Athar Combos</p>
+          <h1 class="page-title" data-i18n="combos_title">COMBOS آثر</h1>
+          <div class="gold-line"></div>
+          <p class="page-desc" data-i18n="combos_desc">هوا انتي اكيد مش هتخرجي الا لما تعملي اوردر صح</p>
+        </div>
+      </section>
+      <section class="section section-cream">
+        <div class="container">
+          <div class="list-header">
+            <h2 class="list-title"><span class="list-num">02</span> <span data-i18n="combos_list_title">COMBOS آثر</span></h2>
+            <a href="#" class="btn btn-outline-gold btn-sm" data-nav="home" data-i18n="combos_back">← الرجوع</a>
+          </div>
+          <div class="products-grid-fixed" id="combosGridAfterHero"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= Necklaces — 30 — 6×6 سم ================= -->
+    <div id="view-necklaces" class="view view-has-bg">
+      <div class="view-bg-img view-bg-necklaces"></div>
+      <div class="view-bg-shade"></div>
+      <section class="page-hero">
+        <div class="container">
+          <p class="page-kicker" data-i18n="necklaces_kicker">Athar Necklaces</p>
+          <h1 class="page-title" data-i18n="necklaces_title">سلاسل</h1>
+          <div class="gold-line"></div>
+          <p class="page-desc" data-i18n="necklaces_desc">خشي خدي لفه هتطلعي ب 1000 منتج في ايدك</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="list-header">
+            <h2 class="list-title"><span class="list-num">01</span> <span data-i18n="necklaces_list_title">سلاسل</span></h2>
+            <a href="#" class="btn btn-outline-gold btn-sm" data-nav="home" data-i18n="acc_back">← الرجوع</a>
+          </div>
+          <div class="products-grid-fixed" id="necklacesGrid"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= Bracelets — 30 — 6×6 سم ================= -->
+    <div id="view-bracelets" class="view view-has-bg">
+      <div class="view-bg-img view-bg-bracelets"></div>
+      <div class="view-bg-shade"></div>
+      <section class="page-hero">
+        <div class="container">
+          <p class="page-kicker" data-i18n="bracelets_kicker">Athar Bracelets</p>
+          <h1 class="page-title" data-i18n="bracelets_title">انسيلات</h1>
+          <div class="gold-line"></div>
+          <p class="page-desc" data-i18n="bracelets_desc">خشي خدي لفه هتطلعي ب 1000 منتج في ايدك</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="list-header">
+            <h2 class="list-title"><span class="list-num">02</span> <span data-i18n="bracelets_list_title">انسيلات</span></h2>
+            <a href="#" class="btn btn-outline-gold btn-sm" data-nav="home" data-i18n="acc_back">← الرجوع</a>
+          </div>
+          <div class="products-grid-fixed" id="braceletsGrid"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= Rings — 30 — 6×6 سم ================= -->
+    <div id="view-rings" class="view view-has-bg">
+      <div class="view-bg-img view-bg-rings"></div>
+      <div class="view-bg-shade"></div>
+      <section class="page-hero">
+        <div class="container">
+          <p class="page-kicker" data-i18n="rings_kicker">Athar Rings</p>
+          <h1 class="page-title" data-i18n="rings_title">خواتم</h1>
+          <div class="gold-line"></div>
+          <p class="page-desc" data-i18n="rings_desc">خشي خدي لفه هتطلعي ب 1000 منتج في ايدك</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="list-header">
+            <h2 class="list-title"><span class="list-num">03</span> <span data-i18n="rings_list_title">خواتم</span></h2>
+            <a href="#" class="btn btn-outline-gold btn-sm" data-nav="home" data-i18n="acc_back">← الرجوع</a>
+          </div>
+          <div class="products-grid-fixed" id="ringsGrid"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= REVIEWS PAGE ================= -->
+    <div id="view-reviews" class="view">
+      <section class="page-hero">
+        <div class="container">
+          <p class="page-kicker" data-i18n="reviews_kicker">Customer Love</p>
+          <h1 class="page-title" data-i18n="reviews_title">آراء العملاء</h1>
+          <div class="gold-line"></div>
+          <p class="page-desc" data-i18n="reviews_desc">50 رأي من عميلات آثر — تجارب حقيقية بلهجة مصرية (بيانات تجريبية قابلة للاستبدال)</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="reviews-grid" id="reviewsGrid"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= FAQ PAGE ================= -->
+    <div id="view-faq" class="view">
+      <section class="page-hero">
+        <div class="container">
+          <p class="page-kicker" data-i18n="faq_kicker">Help & Support</p>
+          <h1 class="page-title" data-i18n="faq_title">الأسئلة والاسترجاع</h1>
+          <div class="gold-line"></div>
+          <p class="page-desc" data-i18n="faq_desc">كل ما تحتاجين معرفته عن الطلب، الشحن، والاستبدال</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="faq-list" id="faqList"></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ================= CONTACT PAGE ================= -->
+    <div id="view-contact" class="view">
+      <section class="page-hero">
+        <div class="container">
+          <p class="page-kicker" data-i18n="contact_kicker">Get In Touch</p>
+          <h1 class="page-title" data-i18n="contact_title">تواصل معنا</h1>
+          <div class="gold-line"></div>
+          <p class="page-desc" data-i18n="contact_desc">نحن هنا لمساعدتك — تواصلي معنا عبر منصاتك المفضلة</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="contact-grid">
+            <a href="#" id="contactWhatsapp" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon whatsapp">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.94A9.91 9.91 0 0 0 12.04 2C6.58 2 2.18 6.41 2.18 11.88c0 1.74.46 3.44 1.32 4.94L2 22l5.34-1.4a9.86 9.86 0 0 0 4.7 1.2h.01c5.46 0 9.86-4.41 9.86-9.88 0-2.64-1.03-5.12-2.86-6.98zm-7.01 15.24h-.01a8.13 8.13 0 0 1-4.14-1.13l-.3-.18-3.17.83.85-3.09-.2-.32a8.2 8.2 0 0 1-1.27-4.41c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.41a8.2 8.2 0 0 1 2.41 5.83c0 4.55-3.7 8.25-8.24 8.25zm4.52-6.17c-.25-.12-1.47-.73-1.7-.81-.23-.09-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43l-.48-.01c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.68 4.23 3.76.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+              </div>
+              <h3>WhatsApp</h3>
+              <p>01040922823</p>
+              <span class="contact-link">فتح واتساب →</span>
+            </a>
+            <a href="#" id="contactInstagram" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon instagram">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+              </div>
+              <h3>Instagram</h3>
+              <p>athar_1_11</p>
+              <span class="contact-link">فتح انستجرام →</span>
+            </a>
+            <a href="#" id="contactTiktok" target="_blank" rel="noopener" class="contact-card">
+              <div class="contact-icon tiktok">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V8.93a6.27 6.27 0 0 0-.79-.04A6.34 6.34 0 0 0 3.15 15.23a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.2 8.2 0 0 0 4.76 1.52V6.84a4.83 4.83 0 0 1-1 0z"/></svg>
+              </div>
+              <h3>TikTok</h3>
+              <p>athar_1_11</p>
+              <span class="contact-link">فتح تيك توك →</span>
+            </a>
+            <a href="tel:01040922823" class="contact-card">
+              <div class="contact-icon" style="background:linear-gradient(135deg, #8B6F3A, #C9A86A);color:#fff">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <h3>رقم الهاتف</h3>
+              <p>01040922823</p>
+              <span class="contact-link">اتصل الآن →</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ============ PRODUCT DETAIL MODAL ============ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="productModal">
+      <button class="modal-close" id="modalClose" aria-label="إغلاق">×</button>
+      <div class="modal-inner">
+        <div class="modal-img">
+          <img id="modalImage" src="" alt="" />
+          <span class="modal-badge" id="modalBadge"></span>
+        </div>
+        <div class="modal-info">
+          <p class="modal-kicker" id="modalKicker"></p>
+          <h2 class="modal-title" id="modalTitle"></h2>
+          <p class="modal-id" id="modalId"></p>
+          <p class="modal-desc" id="modalDesc"></p>
+          <div class="modal-price-row">
+            <span class="modal-price" id="modalPrice"></span>
+            <span class="modal-currency">جنيه</span>
+          </div>
+          <div class="qty-row">
+            <span class="qty-label" data-i18n="modal_qty">الكمية</span>
+            <div class="qty-control">
+              <button class="qty-btn" id="qtyMinus">−</button>
+              <span class="qty-value" id="qtyValue">1</span>
+              <button class="qty-btn" id="qtyPlus">+</button>
+            </div>
+          </div>
+          <div class="modal-actions">
+            <button class="btn btn-gold btn-full" id="modalAddToCart" data-i18n="modal_add">إضافة إلى السلة</button>
+            <button class="btn btn-dark btn-full" id="modalBuyNow" data-i18n="modal_order">طلب المنتج الآن</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-header">
+      <h3 data-i18n="cart_title">سلة المشتريات</h3>
+      <button class="cart-close" id="cartClose">×</button>
+    </div>
+    <div class="cart-body" id="cartBody"></div>
+    <div class="cart-footer" id="cartFooter">
+      <p class="cart-policy" data-i18n="cart_policy">لا يوجد استرجاع لأي أوردر، متاح الاستبدال فقط.</p>
+      <p class="cart-delivery" data-i18n="cart_delivery">وقت التوصيل من 4 إلى 5 أيام عمل، وسيصلك رسالة تأكيد قبل الشحن.</p>
+      <div class="cart-total-row">
+        <span data-i18n="cart_total">الإجمالي</span>
+        <span class="cart-total" id="cartTotal">0 جنيه</span>
+      </div>
+      <button class="btn btn-gold btn-full" id="checkoutBtn" data-i18n="cart_checkout">إتمام الطلب عبر واتساب</button>
+      <button class="btn btn-outline-gold btn-full" id="continueShopping" data-i18n="cart_continue">متابعة التسوق</button>
+    </div>
+  </div>
+
+  <a href="https://wa.me/201040922823?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A2%D8%AB%D8%B1%20%7C%20Athar" target="_blank" rel="noopener" class="whatsapp-float" aria-label="تواصل واتساب">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.94A9.91 9.91 0 0 0 12.04 2C6.58 2 2.18 6.41 2.18 11.88c0 1.74.46 3.44 1.32 4.94L2 22l5.34-1.4a9.86 9.86 0 0 0 4.7 1.2h.01c5.46 0 9.86-4.41 9.86-9.88 0-2.64-1.03-5.12-2.86-6.98zm-7.01 15.24h-.01a8.13 8.13 0 0 1-4.14-1.13l-.3-.18-3.17.83.85-3.09-.2-.32a8.2 8.2 0 0 1-1.27-4.41c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.41a8.2 8.2 0 0 1 2.41 5.83c0 4.55-3.7 8.25-8.24 8.25zm4.52-6.17c-.25-.12-1.47-.73-1.7-.81-.23-.09-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.24-.74-.66-1.24-1.47-1.38-1.72-.15-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43l-.48-.01c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.57.12.17 1.75 2.68 4.23 3.76.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+  </a>
+
+  <div class="toast" id="toast"></div>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="footer-top-gold"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo-box"><img src="1213.png" alt="آثر | Athar"></div>
+          <div class="footer-logo">آثر <span>| Athar</span></div>
+          <p class="footer-tag" data-i18n="footer_tag">إكسسوارات حريمي</p>
+          <p class="footer-desc" data-i18n="footer_desc">إكسسوارات من اللي قلبك يحبها</p>
+        </div>
+        <div class="footer-links">
+          <h4 data-i18n="footer_links_title">روابط سريعة</h4>
+          <a href="#" data-nav="home">الرئيسية</a>
+          <a href="#" data-nav="reviews">آراء العملاء</a>
+          <a href="#" data-nav="faq">الأسئلة والاسترجاع</a>
+          <a href="#" data-nav="contact">تواصل معنا</a>
+        </div>
+        <div class="footer-social">
+          <h4 data-i18n="footer_social_title">تابعينا</h4>
+          <a href="#" class="social-link" id="footerWhatsapp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.05 4.94A9.91 9.91 0 0 0 12.04 2C6.58 2 2.18 6.41 2.18 11.88c0 1.74.46 3.44 1.32 4.94L2 22l5.34-1.4a9.86 9.86 0 0 0 4.7 1.2h.01c5.46 0 9.86-4.41 9.86-9.88 0-2.64-1.03-5.12-2.86-6.98z"/></svg>
+            WhatsApp — 01040922823
+          </a>
+          <a href="#" class="social-link" id="footerInstagram">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            Instagram — athar_1_11
+          </a>
+          <a href="#" class="social-link" id="footerTiktok">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V8.93a6.27 6.27 0 0 0-.79-.04A6.34 6.34 0 0 0 3.15 15.23a6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.34-6.34V8.75a8.2 8.2 0 0 0 4.76 1.52V6.84a4.83 4.83 0 0 1-1 0z"/></svg>
+            TikTok — athar_1_11
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p data-i18n="footer_copy">© 2026 آثر — Athar. جميع الحقوق محفوظة.</p>
+        <p class="footer-luxury" data-i18n="footer_luxury">Luxury Gold • Elegant • Feminine • Premium</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
