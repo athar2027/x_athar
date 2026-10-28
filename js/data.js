@@ -9,13 +9,13 @@ let SETTINGS = {
   brandName: "آثر",
   brandEn: "Athar",
   tagline: "اكتشفي إكسسواراتك مع آثر",
-  whatsappNumber: "201040922823",
+  whatsappNumber: "201022981032",
   currency: "جنيه"
 };
 
 // ===== روابط التواصل =====
 let SOCIAL_LINKS = {
-  whatsapp: "https://wa.me/201040922823",
+  whatsapp: "https://wa.me/201022981032",
   instagram: "https://www.instagram.com/athar_1_11",
   tiktok: "https://www.tiktok.com/@athar_1_11"
 };
